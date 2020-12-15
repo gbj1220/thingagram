@@ -1,0 +1,40 @@
+#app {
+  display: grid;
+  height: max-content;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 10% 70% 10%; 
+  font-size: 20px;
+  background-color: red;
+  grid-template-areas:
+  "head"
+  "navi"
+  "pics"
+  "fotr"
+}
+
+#header {
+  grid-area: head;
+  display: grid;
+  font-size: 5em;
+  align-content: center;
+  justify-content: center;
+}
+
+#nav-bar {
+  grid-area: navi;
+}
+
+#pics {
+  grid-area: pics;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%; 
+  display: grid;
+}
+
+#footer {
+  grid-area: fotr;
+  background-color: gray;
+}
+img{
+  width: 300px;
+}
